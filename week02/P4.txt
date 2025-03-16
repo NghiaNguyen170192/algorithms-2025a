@@ -82,8 +82,8 @@ Without loss of generality, assume left reaches left_0 first (right still > righ
   => A[left_0] + A[right_0] < A[left_0] + A[right] < 0
   => abs(A[left_0] + A[right_0]) > abs(A[left_0] + A[right])
   => contradict that (left_0, right) is the answer
-  => A[left_0] + A[right] cannot > 0 (3)
+  => A[left_0] + A[right] cannot < 0 (3)
 
-  Consider (1), (2), (3), only (3) is possible
+  Consider (1), (2), (3), only (2) is possible
   => (left_0, right_0) will be processed together
   => the algorithm always produces the correct answer
