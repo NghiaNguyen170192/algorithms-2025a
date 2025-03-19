@@ -1,4 +1,4 @@
-package w03;
+package week03;
 
 // Singly Linked List-based implementation of queue
 public class LinkedListQueue<T> {

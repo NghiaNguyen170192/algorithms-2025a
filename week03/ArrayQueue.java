@@ -1,4 +1,4 @@
-package w03;
+package week03;
 
 // array-based implementation of queue
 public class ArrayQueue<T> {

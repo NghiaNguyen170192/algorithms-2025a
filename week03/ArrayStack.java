@@ -1,4 +1,4 @@
-package w03;
+package week03;
 
 // Array-based implementation of stack
 public class ArrayStack<T> {

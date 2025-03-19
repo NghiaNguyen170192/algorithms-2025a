@@ -1,4 +1,4 @@
-package w03;
+package week03;
 
 public class LinkedList<T> implements List<T> {
   static class Node<T> {

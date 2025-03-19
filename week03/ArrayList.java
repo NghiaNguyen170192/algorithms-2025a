@@ -1,4 +1,4 @@
-package w03;
+package week03;
 
 public class ArrayList<T> implements List<T> {
   private int size;

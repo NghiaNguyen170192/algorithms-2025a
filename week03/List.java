@@ -1,4 +1,4 @@
-package w03;
+package week03;
 
 public interface List<T> {
   // insert a value at a specific index (index starts from zero)
