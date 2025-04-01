@@ -1,0 +1,56 @@
+The number of times an operation executes is given
+on the right of the respective one
+
+boolean evenNumberEven(left, right)
+    ans = true                                 {1}
+    for i = left to right                      {N}  because the range is N maximum
+        if (A[i] % 2 == ___)                   {N}
+            ans = not (ans)                    {N}
+    return ans                                 {1}
+
+Replace ___ by 0
+Total execution times: 1 + N + N + N + 1 = 3N + 2
+Remove the insignificant components and multiplicative
+constants, we have the asymptotic complexity O(N)
+
+There are M queries, so the final complexity is O(N * M)
+
+=======
+Proposal
+This range query problem is very similar to the sum range queries
+Use Even(left, right) to denote the even numbers in the range [left, right]
+
+We have:
+Even(0, right) = Even(0, left - 1) + Even(left, right)
+
+So
+Even(left, right) = Even(0, right) - Even(0, left - 1)
+
+Two elements on the RHS are prefixes of number of even numbers
+
+Knowing the number of even numbers, it's traightforward to answer
+if this value is an even or odd one, using the modulo operator
+
+prefixEvenCount = new int[N]
+
+// prefix construction, O(N)
+if (A[0] % 2 = 0)
+  prefixEvenCount[0] = 1
+else
+  prefixEvenCount[0] = 0
+for i = 1 to N - 1
+  prefixEvenCount[i] = prefixEvenCount[i - 1]
+  if (A[i] % 2 = 0)  // one more even number?
+    prefixEvenCount[i]++
+
+// query answering, O(1)
+boolean evenNumberEvenFast(left, right)
+  if left > 0
+    return (prefixEvenCount[right] - prefixEvenCount[left - 1]) % 2 == 0
+  return prefixEvenCount[right] % 2 == 0
+
+Time complexity = construction time + query answering time
+                = O(N) + M * O(1)
+                = O(N) + O(M)
+                = O(N + M)
+Space complexity = O(N)
