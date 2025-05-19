@@ -105,7 +105,7 @@ class TreeNode {
       balanced = false;
     } else {
       // for a tree to be balanced, the sub-trees must be balanced, too
-      balanced = node.left.balanced && node.right.balanced;
+      balanced = (node.left == null || node.left.balanced) && (node.right == null || node.right.balanced);
     }
     return 1 + Math.max(hl, hr);
   }
