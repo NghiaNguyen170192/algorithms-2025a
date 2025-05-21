@@ -40,6 +40,12 @@ public class P1 {
         }
       }
 
+      // even shortest is INFINITY => stop
+      if (shortest == Integer.MAX_VALUE) {
+        // we cannot go further
+        return Integer.MAX_VALUE;
+      }
+
       // update the shortest distance through shortest node
       // to all unvisited nodes
       for (int i = 0; i < n; i++) {
@@ -69,11 +75,6 @@ public class P1 {
         return distances[dest];
       }
 
-      // even shortest is INFINITY => stop
-      if (shortest == Integer.MAX_VALUE) {
-        // we cannot go further
-        return Integer.MAX_VALUE;
-      }
       // continue the next round
       visited[shortestNode] = true;
     }
