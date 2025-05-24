@@ -1,5 +1,5 @@
 package week06;
-
+//permutation
 public class P4 {
     int[] board;
     int BOARD_SIZE = 8;
