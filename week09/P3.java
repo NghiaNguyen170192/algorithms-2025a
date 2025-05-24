@@ -1,4 +1,5 @@
 package week09;
+
 // fast decimal square root
 public class P3 {
     public static void main(String[] args) {

@@ -1,5 +1,6 @@
 package week05;
 
+//Hash table
 public class P2B {
   public static void main(String[] args) {
     RMITStudentCollectionLinearProbing collection = new RMITStudentCollectionLinearProbing(13);

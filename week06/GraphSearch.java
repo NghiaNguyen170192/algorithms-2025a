@@ -55,6 +55,7 @@ public class GraphSearch {
         public void addEdge(int node1, int node2) {
             matrix[node1][node2] = 1;
             // for undirected graph, node1 -> node2 also means node2 -> node1
+            // comment line below for directed edge
             matrix[node2][node1] = 1;
         }
 
@@ -62,6 +63,7 @@ public class GraphSearch {
         public void removeEdge(int node1, int node2) {
             matrix[node1][node2] = 0;
             // for undirected graph, node1 -> node2 also means node2 -> node1
+            // comment line below for undirected edge
             matrix[node2][node1] = 0;
         }
 

@@ -1,5 +1,5 @@
 package week05;
-
+// hash table
 public class P2A {
     public static void main(String[] args) {
         RMITStudentCollectionChaining collection = new RMITStudentCollectionChaining(13);
