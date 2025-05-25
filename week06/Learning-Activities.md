@@ -16,12 +16,16 @@ Then, the Selection sort's intermediate results are
 [1, 2, 5, 6, 9] (after the 4th iteration)
 
 Problem 2
-The RMIT logo contains red and white as its two main colors. Given a connected graph G, your task is to color the vertices using red and white such that no two adjacent vertices share the same color.
+The RMIT logo contains red and white as its two main colors. 
+Given a connected graph G, your task is to color the vertices using red and white such 
+that no two adjacent vertices share the same color.
 
 Implement an algorithm to check whether this coloring condition can be satisfied for a given connected graph G.
 
 Problem 3
-Given an array V storing the values of N items, an array W storing the weights of N items, and a knapsack capacity C. Calculate and return the subset of N items that has the highest sum value, and its total weight does not exceed C.
+Given an array V storing the values of N items, an array W storing the weights of N items,
+and a knapsack capacity C. Calculate and return the subset of N items that has the highest sum value, 
+and its total weight does not exceed C.
 
 Problem 4
 Solve the 8-queens problem. Can you use pruning to reduce the number of computations?

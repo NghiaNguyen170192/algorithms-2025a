@@ -11,14 +11,14 @@ public class DoraemonCake {
 
     // O(N*lgN)
     public double weightByNumber(int X) {
-        double[] w = new double[topics.length];
+        double[] weight = new double[topics.length];
         for (int i = 0; i < topics.length; i++) {
-            w[i] = topics[i].W;
+            weight[i] = topics[i].weight;
         }
-        new MergeSort().mergeSort(w);
+        new MergeSort().mergeSort(weight);
         double total = 0;
-        for (int i = w.length - 1; i > w.length - 1 - X; i--) {
-            total += w[i];
+        for (int i = weight.length - 1; i > weight.length - 1 - X; i--) {
+            total += weight[i];
         }
         return total;
     }
@@ -50,11 +50,11 @@ public class DoraemonCake {
 }
 
 class Topic {
-    public double W;
+    public double weight;
     public double S;
 
-    public Topic(double w, double s) {
-        W = w;
+    public Topic(double weight, double s) {
+        this.weight = weight;
         S = s;
     }
 }
@@ -133,7 +133,7 @@ class SubSet {
         for (int i = 0; i < set.length; i++) {
             if (selected[i]) {
                 totalS += set[i].S;
-                totalW += set[i].W;
+                totalW += set[i].weight;
                 if (totalS > A) {
                     return;
                 }

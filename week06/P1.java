@@ -1,4 +1,5 @@
 package week06;
+
 // bubble sort
 // selection sort
 public class P1 {

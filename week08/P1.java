@@ -1,6 +1,7 @@
 package week08;
 
 import java.util.Random;
+
 // merge sort
 public class P1 {
     static final int SIZE = (int) 1e6;

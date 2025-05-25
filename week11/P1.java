@@ -2,6 +2,7 @@ package week11;
 
 // graph
 // shortest path
+// Dijkstra
 public class P1 {
     public static void main(String[] args) {
         int[][] distances = {

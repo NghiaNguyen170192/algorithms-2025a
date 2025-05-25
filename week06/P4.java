@@ -1,5 +1,7 @@
 package week06;
+
 //permutation
+// 8 queens problem
 public class P4 {
     int[] board;
     int BOARD_SIZE = 8;
